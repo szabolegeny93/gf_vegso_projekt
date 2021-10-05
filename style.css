@@ -1,0 +1,36 @@
+*{
+    font-family: 'EB Garamond', serif;
+    color: white;
+}
+body{
+    background-color: lightgrey;
+    align-content:center;
+}
+main{
+    margin: 50px 50px 50px 50px;
+    
+}
+section{
+    display: flex;
+    background-color: white;
+    
+}
+.arrow{
+    height: inherit;
+    margin-top: 50%;
+    margin-bottom: 50%;
+}
+.arrow_left, .arrow_right{
+    width: 15%;
+    height: 100%;
+    
+}
+#nextPictureArrow{
+    transform: rotate(0.5 turn);    /*nem megfelelő*/
+}
+.actual_image img{
+    max-width: 70%;
+    
+    
+}
+
