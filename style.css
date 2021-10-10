@@ -7,30 +7,28 @@ body{
     align-content:center;
 }
 main{
-    margin: 50px 50px 50px 50px;
-    
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 0;
 }
-section{
+
+.container{
     display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: baseline;
     background-color: white;
     
 }
 .arrow{
-    height: inherit;
-    margin-top: 50%;
-    margin-bottom: 50%;
-}
-.arrow_left, .arrow_right{
-    width: 15%;
-    height: 100%;
+    width:30px;
+    height: 300px;
     
 }
-#nextPictureArrow{
-    transform: rotate(0.5 turn);    /*nem megfelelő*/
-}
-.actual_image img{
-    max-width: 70%;
-    
-    
+.right{
+    transform: rotate(180deg);
 }
 
+img{
+    width:400px;
+}
