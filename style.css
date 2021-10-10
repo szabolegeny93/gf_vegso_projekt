@@ -5,6 +5,7 @@
 body{
     background-color: lightgrey;
     align-content:center;
+    
 }
 main{
     margin: 0 auto;
@@ -28,7 +29,17 @@ main{
 .right{
     transform: rotate(180deg);
 }
-
+.actual_image{
+    position: relative;
+}
 img{
     width:400px;
+    
+}
+.text_block{
+    position: absolute;
+    width: 400px;
+    bottom: 0px;
+    background-color: rgba(10, 5, 5, 0.5);
+    
 }
