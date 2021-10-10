@@ -29,9 +29,13 @@ main{
 .right{
     transform: rotate(180deg);
 }
-.actual_image{
+.image{
     position: relative;
+    width:400px;
+    height: 400px;
+    background-size: auto 400px;
 }
+
 img{
     width:400px;
     
