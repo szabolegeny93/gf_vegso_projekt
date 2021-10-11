@@ -21,13 +21,20 @@ main{
     background-color: white;
     
 }
-.arrow{
+.left_arrow{
     width:30px;
-    height: 300px;
-    
+    min-height: 30px;
+    background-repeat: no-repeat;
+    align-items: center;
+    cursor: pointer;
 }
-.right{
+.right_arrow{
+    width:30px;
+    height: 400px;
     transform: rotate(180deg);
+    background-repeat: no-repeat;
+    align-items: center;
+    cursor: pointer;
 }
 .image{
     position: relative;
@@ -36,10 +43,6 @@ main{
     background-size: auto 400px;
 }
 
-img{
-    width:400px;
-    
-}
 .text_block{
     position: absolute;
     width: 400px;
