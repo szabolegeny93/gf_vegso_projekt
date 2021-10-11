@@ -13,6 +13,7 @@ let loadPhoto = (photoNumber) => {
     $(".photo-description").text(imagesData[currentPhoto].description);
 };
 
+//arrows
 $(".left_arrow").css("background-image", `url("images/arrow.svg")`);
 $(".right_arrow").css("background-image", `url("images/arrow.svg")`);
 
@@ -37,6 +38,21 @@ $(".right_arrow").on("click", () => {
     }
     loadPhoto(currentPhoto);;
 })
+
+//ready
 $(document).ready(function () {
     loadPhoto(currentPhoto);
+    thumbnailsLoad();
 });
+
+//thumbnails
+$(".thumbnails").append($(".box").css("background-image", `url(${imagesData[0].photo})`));
+function thumbnailsLoad(params) { 
+};
+
+imagesData.forEach((item, index) =>{
+    
+    $(".thumbnails").append(`<div class="box" data-imageNo="${index}"></div>`);
+    $(`.thumbnails>.box[data-imageNo="${index}"]`).css("background-image", `url(${item.photo})`);
+});
+
